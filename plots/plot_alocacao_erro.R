@@ -1,9 +1,8 @@
 library(gridExtra)
 library(tidyverse)
 
-data <- read.csv("data/alocacao.csv") %>%
-  mutate(start_date = as_datetime("start_date"))
-metrics <- read.csv("data/mape_alocacao.csv")
+data <- read_csv("data/alocacao.csv") 
+metrics <- read_csv("data/mape_alocacao.csv")
 
 aloc <- data %>%
   ggplot(aes(x = start_date, y = num_instances, color = "Demanda")) +
