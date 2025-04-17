@@ -1,7 +1,7 @@
 library(gridExtra)
 library(tidyverse)
 
-data <- read_csv("data/alocacao.csv") 
+data <- read_csv("data/alocacao_norm.csv") 
 metrics <- read_csv("data/mape_alocacao.csv")
 
 aloc <- data %>%
