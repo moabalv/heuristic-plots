@@ -1,5 +1,5 @@
 library(tidyverse)
-
+mape <- read_csv("data/mape_metricas.csv")
 
 
 ggplot(mape) + 
